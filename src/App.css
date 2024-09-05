@@ -1,0 +1,147 @@
+/* Main container with background image */
+.app-container {
+  display: flex;
+  height: 100vh; /* Full height of the viewport */
+  flex-direction: column; /* Ensure header and body are stacked vertically */
+  background-image: url('https://img.freepik.com/free-photo/blue-smooth-wall-textured-background_53876-106133.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  padding: 0 20px;
+  background-color: rgba(59, 57, 57, 0.9);; /* Semi-transparent dark background */
+  color: white;
+  width: 97.9%;
+}
+
+/* Logo inside header */
+.logo {
+  height: 50%;
+}
+
+.heading {
+  height: 70%;
+}
+
+/* Left sidebar for prompt history */
+.history-sidebar {
+  width: 10%;
+  background-color: rgba(92, 87, 87, 0.8);
+  color: #ddd;
+  padding: 20px;
+  overflow-y: auto;
+  height: 92vh; /* Remaining height after header */
+  position: fixed; /* Fix the sidebar on the left side */
+  top: 8vh; /* Below the header */
+  left: 0;
+}
+
+.history-sidebar h2 {
+  margin-top: 0;
+}
+
+.history-sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.history-sidebar li {
+  margin-bottom: 10px;
+  padding: 8px;
+  background-color: rgba(77, 73, 73, 0.8);
+  border-radius: 5px;
+}
+
+/* Chat container */
+.chat-container {
+  flex-grow: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color:rgba(92, 87, 87, 0.8); /* Slightly transparent white background */
+  padding: 20px;
+  margin-left: 12%; /* Offset for the sidebar */
+  height: 95vh; /* Remaining height after header */
+  overflow: hidden;
+}
+
+/* Message display area */
+.chat-box {
+  flex-grow: 1;
+  overflow-y: auto;
+  background-color: rgba(92, 87, 87, 0.5);;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Message styling */
+.message {
+  padding: 8px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  max-width: 80%;
+}
+
+/* Different styles for user and AI messages */
+.message.user {
+  background-color: #d1e7dd;
+  text-align: left;
+}
+
+.message.ai {
+  background-color: #f8d7da;
+  text-align: right; /* Right-align AI messages */
+  margin-left: auto;
+}
+
+/* Input area at the bottom */
+.input-area {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1); /* Light border at the top */
+}
+
+.input-area input {
+  flex-grow: 1;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px; /* Set the font size of the text inside the input */
+  
+}
+
+.input-area button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.input-area button:hover {
+  background-color: #45a049;
+}
+
+/* User profile image on top right */
+.user-profile {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
