@@ -16,7 +16,12 @@
   align-items: center;
   height: 8vh;
   padding: 0 20px;
-  background-color: rgba(59, 57, 57, 0.9);; /* Semi-transparent dark background */
+  background-color: rgba(
+    59,
+    57,
+    57,
+    0.9
+  ); /* Semi-transparent dark background */
   color: white;
   width: 97.9%;
 }
@@ -61,11 +66,16 @@
 
 /* Chat container */
 .chat-container {
-  flex-grow: 1; 
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color:rgba(92, 87, 87, 0.8); /* Slightly transparent white background */
+  background-color: rgba(
+    92,
+    87,
+    87,
+    0.8
+  ); /* Slightly transparent white background */
   padding: 20px;
   margin-left: 12%; /* Offset for the sidebar */
   height: 95vh; /* Remaining height after header */
@@ -76,7 +86,7 @@
 .chat-box {
   flex-grow: 1;
   overflow-y: auto;
-  background-color: rgba(92, 87, 87, 0.5);;
+  background-color: rgba(92, 87, 87, 0.5);
   padding: 10px;
   border-radius: 10px;
 }
@@ -115,7 +125,6 @@
   border-radius: 5px;
   border: 1px solid #ddd;
   font-size: 16px; /* Set the font size of the text inside the input */
-  
 }
 
 .input-area button {
